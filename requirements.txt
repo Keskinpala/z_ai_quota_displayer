@@ -1,1 +1,5 @@
 requests>=2.28.0
+pystray>=0.19.0
+Pillow>=9.0.0
+# win10toast removed in v1.3.0 — broken on Windows 11
+# Notifications now use built-in notifier.py (stdlib only)

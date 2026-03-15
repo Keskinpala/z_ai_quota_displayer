@@ -31,6 +31,21 @@ class AppConfig:
     opacity: float = 0.95
     theme: str = "dark"              # "dark" | "light"
     utc_offset: int = 3              # UTC+X, e.g. 3 for Turkey
+    
+    # New features v1.1.0
+    minimize_to_tray: bool = True    # Minimize to system tray instead of closing
+    notifications_enabled: bool = True   # Enable quota warning notifications
+    warning_threshold: int = 80      # Show warning notification at X% usage
+    critical_threshold: int = 95     # Show critical notification at X% usage
+    auto_start: bool = False         # Auto-start with Windows
+
+    # New features v1.3.0
+    notify_interval_min: int = 0     # 0 = off; periodic reminder every N minutes while in tray
+    notify_sound: bool = True        # Play system sound with notifications (Windows only)
+
+    # New features v1.4.0
+    language: str = "tr"             # UI language code (see i18n.LANGUAGES)
+    chat_mode: str = "browser"       # "browser" | "builtin" — how to open chat.z.ai
 
     def save(self):
         try:
