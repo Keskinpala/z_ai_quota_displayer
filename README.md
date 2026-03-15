@@ -1,7 +1,7 @@
 # Z.ai Monitor
-![GitHub stars]
-![GitHub downloads]
-![GitHub release]
+![GitHub stars](https://img.shields.io)
+![GitHub downloads](https://img.shields.io)
+![GitHub release](https://img.shields.io)
 <p align="center">
 
 Always-on-top desktop overlay that shows your **Z.ai API quota and token usage in real time**.
