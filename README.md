@@ -1,6 +1,6 @@
 # Z.ai Monitor
 ![GitHub Stars](https://img.shields.io/github/stars/Keskinpala/z_ai_quota_displayer)
-[![Github All Releases](https://img.shields.io/github/downloads/Keskinpala/z_ai_quota_displayer/total.svg)]()
+[![Github Download](https://img.shields.io/github/downloads/Keskinpala/z_ai_quota_displayer/total.svg)]()
 
 <p align="center">
 
