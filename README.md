@@ -1,4 +1,4 @@
-# Z.ai Monitor V1.0.3
+# Z.ai Monitor V1.0.5
 ![GitHub Stars](https://img.shields.io/github/stars/Keskinpala/z_ai_quota_displayer)
 [![Github Download](https://img.shields.io/github/downloads/Keskinpala/z_ai_quota_displayer/total.svg)]()
 
