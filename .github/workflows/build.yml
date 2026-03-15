@@ -1,34 +1,32 @@
-name: Build EXE
+name: Build and Release
 
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
+
+permissions:
+  contents: write
 
 jobs:
   build:
+
     runs-on: windows-latest
 
     steps:
 
-      - name: Checkout
-        uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install pyinstaller
+    - run: pip install -r requirements.txt
+    - run: pip install pyinstaller
 
-      - name: Build EXE
-        run: |
-          pyinstaller --onefile app.py
+    - run: pyinstaller --onefile app.py
 
-      - name: Upload Release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: dist/*.exe
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: dist/*.exe
