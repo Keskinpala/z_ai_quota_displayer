@@ -21,7 +21,7 @@ Lightweight • Draggable • Fast • Minimal
 
 <p align="center">
 
-<a href="https://github.com/USERNAME/REPO/releases/latest">
+<a href="https://github.com/Keskinpala/z_ai_quota_displayer/releases/latest">
 <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge">
 </a>
 
